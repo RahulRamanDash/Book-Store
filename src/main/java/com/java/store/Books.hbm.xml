@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 14-Feb-2024, 5:14:55 pm by Hibernate Tools 3.6.2.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="com.java.store.Books" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="BOOKS">
+        <id name="bookId" type="int">
+            <column name="BOOKID"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="bookName" optimistic-lock="true" type="java.lang.String" unique="false">
+            <column name="BOOKNAME"/>
+        </property>
+        <property generated="never" lazy="false" name="authorName" optimistic-lock="true" type="java.lang.String" unique="false">
+            <column name="AUTHORNAME"/>
+        </property>
+        <property generated="never" lazy="false" name="price" optimistic-lock="true" type="double" unique="false">
+            <column name="PRICE"/>
+        </property>
+        <property generated="never" lazy="false" name="PublishedDate" optimistic-lock="true" type="java.util.Date" unique="false">
+            <column name="PUBLISHEDDATE"/>
+        </property>
+        <property generated="never" lazy="false" name="bookUrl" optimistic-lock="true" type="java.lang.String" unique="false">
+            <column name="BOOKURL"/>
+        </property>
+        <property generated="never" lazy="false" name="description" optimistic-lock="true" type="java.lang.String" unique="false">
+            <column name="DESCRIPTION"/>
+        </property>
+        <property generated="never" lazy="false" name="genre" optimistic-lock="true" type="java.lang.String" unique="false">
+            <column name="GENRE"/>
+        </property>
+    </class>
+</hibernate-mapping>

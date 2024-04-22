@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 14-Feb-2024, 12:36:44 pm by Hibernate Tools 3.6.2.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="com.java.store.OrderItems" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="ORDERITEMS">
+        <id name="orderItemId" type="int">
+            <column name="ORDERITEMID"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="bookId" optimistic-lock="true" type="int" unique="false">
+            <column name="BOOKID"/>
+        </property>
+        <property generated="never" lazy="false" name="orderId" optimistic-lock="true" type="int" unique="false">
+            <column name="ORDERID"/>
+        </property>
+        <property generated="never" lazy="false" name="quantity" optimistic-lock="true" type="int" unique="false">
+            <column name="QUANTITY"/>
+        </property>
+        <property generated="never" lazy="false" name="price" optimistic-lock="true" type="double" unique="false">
+            <column name="PRICE"/>
+        </property>
+    </class>
+</hibernate-mapping>
